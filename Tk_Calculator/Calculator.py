@@ -59,11 +59,12 @@ def press_key(event):
 
 # Window
 win = tk.Tk()
+win.title("Calculator")
 win.geometry("240x250")
 win.resizable(False, False)
 win.config(bg="#000000")
 win.bind("<Key>", press_key)
-photo = tk.PhotoImage(file="icon.png")
+photo = tk.PhotoImage(file="Calculator_Icon.png")
 win.iconphoto(False, photo)
 # Entry(calculator display)
 entry = tk.Entry(win, justify="right", font=("Aerial", 15), border=2, text="0")
